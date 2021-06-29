@@ -15,16 +15,16 @@ int cofactor(int data[][3],int x,int y)
 
 int main()
 {
-    cout<<"My id is C173207, so XX=07"<<endl;
+    cout<<"My Id is C173207, so XX = 7"<<endl;
     cout<<"Consider A*B=X where B matrix is to be determined\n";
     int matrix1[3][3];
-    cout<<"Enter the elements of Faculty matrix\n";
+    cout<<"Enter the elements of A/Faculty matrix\n";
     for(int i=0;i<3;i++)
         for(int j=0;j<3;j++)
             cin>>matrix1[i][j];
 
     int mat[3];
-    cout<<"Enter the elements of Salary matrix\n";
+    cout<<"Enter the elements of X/Salary matrix\n";
     for(int q=0;q<3;q++)
         cin>>mat[q];
     int determinant=0;
@@ -50,8 +50,6 @@ int main()
         }
         cout<<endl;
     }
-
-
 
     cout<<"Cofactor matrix\n";
     int cofactor_matrix[3][3];
@@ -79,7 +77,7 @@ int main()
         cout<<result[h]<<endl;
     }
 
-    cout<<"Salary of each faculty:\n";
+    cout<<"Matrix B/Salary of each faculty: \n";
     for(int i=0;i<3;i++)
         cout<<(result[i]/ determinant )<<endl;
 
@@ -88,7 +86,7 @@ int main()
 }
 
 /*
+2 2 4
 3 1 2
-2 -3 -1
-1 2 1
+1 4 3
 */
